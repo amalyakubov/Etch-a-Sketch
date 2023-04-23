@@ -1,8 +1,9 @@
-const container = document.getElementById('#container');
+const container = document.getElementById('container');
 function createGrid() {
-    for (let  i = 0; i < 196; i++) {
+    for (let  i = 0; i < 256; i++) {
         let divs = document.createElement('div');
-        document.body.appendChild(divs);
+        container.appendChild(divs);
     }
 }
+
 createGrid();
