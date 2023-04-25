@@ -1,6 +1,6 @@
 #container {
     display: grid;
-    border: 2.5px solid black;
+    border: 4.5px solid black;
     height: 960px;
     width: 960px;
     margin-top: 3rem;
@@ -10,7 +10,18 @@
     flex: 1 0 auto;
 }
 
-body {
+button {
+    width: 10rem;
+    margin-top: 3rem;
+}
+
+#container-container {
     display: flex;
+    justify-content: center;
+}
+
+#button-container {
+    display: flex;
+    height: 5rem;
     justify-content: center;
 }

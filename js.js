@@ -23,3 +23,18 @@ Array.from(document.getElementsByClassName('pixel')).forEach(element => {
         element.style.backgroundColor = 'red';
     })
 })
+
+function random() {
+    let firstValue = Math.floor(Math.random() * 255);
+    let secondValue = Math.floor(Math.random() * 255);
+    let thirdValue = Math.floor(Math.random() * 255);
+    return `rgb(${firstValue}, ${secondValue}, ${thirdValue})`;
+}
+
+document.getElementById('toggle-random').addEventListener('click', () => {
+    Array.from(document.getElementsByClassName('pixel')).forEach(element => {
+        element.addEventListener('mouseover', () => {
+            element.style.backgroundColor = random();
+        })
+    })
+})
