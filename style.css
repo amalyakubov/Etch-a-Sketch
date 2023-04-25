@@ -1,3 +1,17 @@
 #container {
+    display: grid;
+    border: 2.5px solid black;
+    width:min-content;
+    margin-top: 3rem;
+}
+
+#container > * {
+    height: 60px;
+    width: 60px;
+    flex: 0 0 auto;
+}
+
+body {
     display: flex;
+    justify-content: center;
 }
