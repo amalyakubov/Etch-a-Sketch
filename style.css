@@ -1,14 +1,13 @@
 #container {
     display: grid;
     border: 2.5px solid black;
-    width:min-content;
+    height: 960px;
+    width: 960px;
     margin-top: 3rem;
 }
 
 #container > * {
-    height: 60px;
-    width: 60px;
-    flex: 0 0 auto;
+    flex: 1 0 auto;
 }
 
 body {
